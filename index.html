@@ -1,12 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Pesquisa Culturama</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1>Pesquisa On-line</h1>
+    </header>
+    <section>
+        <form action="" method="get">
+            <!-- método get-deixa salvo no url -->
+            <!-- método post-envia um request para o backend-->
+            <!-- DADOS PESSOAIS -->
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label for="userName">Nome</label>
+                <input type="text" name="userName" placeholder="Fulano" required>
+                <br>
+                <label for="age">Idade</label>
+                <input type="number" name="userAge" min="12" max="100" required>
+                <br>
+                <label for="birthDate">Data de Aniversário</label>
+                 <input type="date" name="birthdate">
+                <br>
+                <label for="userEmail">Email</label>
+                <input type="email" name="userEmail" placeholder="fulano@gmail.com" required>
+                <br>
+                <label for="userPhone">Telefone</label>
+                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
+                    placeholder="DDD + números sem espaço ou hífen">
+                <br>
+                <label for="userImage">Upload de Foto</label>
+                <input type="file" accept="image/*" name="userImage">
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </section>
 </body>
-</html>
